@@ -10,7 +10,7 @@ def get_ip_address():
 
 @app.route('/', methods=['POST'])
 def trigger():
-   subprocess.Popen('Python3 stress_cpu.py', shell=True)
+   subprocess.Popen('python3 stress_cpu.py', shell=True)
    return 'success'
 
 if __name__ == '__main__':
